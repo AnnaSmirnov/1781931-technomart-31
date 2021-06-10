@@ -1,0 +1,35 @@
+:root {
+  --basic-black: #000000;
+  --basic-dark: #32425C;
+  --basic-active-dark: #161D29;
+  --basic-extra-dark: #293449;
+  --basic-dark-red: rgba(0, 0, 0, 0.24);
+  --basic-red: #EE3643;
+  --basic-hover-red: #CA2C37;
+  --basic-active-red: #BA2732;
+  --basic-green: #63A63E;
+  --basic-hover-green: #5FBB2D;
+  --basic-active-green: #518534;
+  --basic-white: #ffffff;
+  --basic-opacity-white: rgba(255, 255, 255, 0.5);
+  --basic-light: #F7F3EC;
+  --basic-extra-light: #F9F5F0;
+  --basic-background: #F1F5F7;
+  --basic-light-orange: #FFD180;
+  --basic-grey: #A9A9A9;
+  --basic-light-grey: #C5C5C5;
+  --extra-light-grey: #EAEAEA;
+  --special-extra-dark:#1D2739;
+  --special-gray:#F3F7F9;
+  --special-grey-icon:#B7BFC8;
+  --special-dark-icon:#3D546F;
+  --special-hover-grey: rgba(197, 197, 197, 0.3);
+  --special-active-grey: rgba(169, 169, 169, 0.3);
+  --special-yellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-purple: #DC91D8;
+  --special-light-green: #8ED78F;
+  --special-opacity-white: rgba(255, 255, 255, 0.3);
+  --spesial-shadow-gray:#405069;
+  --modal-grey: #F4F4F4;
+}
