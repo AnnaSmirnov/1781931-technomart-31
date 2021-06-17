@@ -18,6 +18,7 @@
   --basic-light-orange: #FFD180;
   --basic-grey: #A9A9A9;
   --basic-light-grey: #C5C5C5;
+  --light-grey-hover:#B5B5B5;
   --extra-light-grey: #EAEAEA;
   --special-extra-dark:#1D2739;
   --special-gray:#F3F7F9;
@@ -29,8 +30,10 @@
   --special-blue: #3BBCE3;
   --special-purple: #DC91D8;
   --special-light-green: #8ED78F;
+  --spesial-shadow-green:#367315;
   --special-opacity-white: rgba(255, 255, 255, 0.3);
   --spesial-shadow-gray:#405069;
   --spesial-social-gfay:#212A3A;
   --modal-grey: #F4F4F4;
+  --spesial-border-gray:#E5E5E5;
 }
