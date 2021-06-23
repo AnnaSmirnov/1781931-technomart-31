@@ -43,6 +43,11 @@ a { text-decoration: none }
 .account-active-item {
   list-style: none;
 }
+
+.perforators{
+  display: grid;
+  grid-template-columns: 220px 1rf;
+}
 /*breadcrumbs*/
 .breadcrumbs{
   list-style: none;
@@ -50,6 +55,9 @@ a { text-decoration: none }
   line-height: 1.38;
   font-weight: 400;
   text-transform: uppercase;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-self: start;
 }
 .breadcrumbs-item a{
   color: var(--basic-black);
@@ -68,6 +76,10 @@ a { text-decoration: none }
   line-height: 1;
   font-weight: 400;
   text-transform: uppercase;
+  min-height: 89px;
+  padding-top: 29px;
+  padding-left: 29px;
+  padding-bottom: 30px;
 }
 .filter-name,.sorting-name{
   font-size: 13px;
@@ -75,6 +87,7 @@ a { text-decoration: none }
   font-weight: 400;
   background-color: var(--basic-light);
 }
+
 /*sorting*/
 .sorting-item{
   text-transform: uppercase;
@@ -123,6 +136,9 @@ a { text-decoration: none }
   transform: rotate(180deg);
 }
 /*filter*/
+.filter{
+  width: 220px;
+}
 .filter h2 {
   background-color: var(--basic-light);
   padding: 10px 18px;
@@ -310,9 +326,10 @@ opacity: 0.3;
   opacity: 0.3;
   }
 /*catalog*/
-.products-list{
+.main-catalog-list{
   list-style: none;
 }
+
 .main-catalog-item{
   background-color: var(--basic-white);
   border: 1px solid var(--extra-light-grey);
@@ -391,8 +408,12 @@ background-color: var(--basic-hover-green);
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+
 }
-.catalog-pagination-item a {
+.catalog-pagination-item a{
   width: 38px;
   height: 38px;
   display: flex;
@@ -406,13 +427,13 @@ background-color: var(--basic-hover-green);
   font-size: 13px;
   line-height: 1.4px;
 }
-.catalog-pagination-item:last-of-type a {
+.catalog-pagination-item:last-of-type a{
   width: 140px;
 }
-.catalog-pagination-item a:hover {
+.catalog-pagination-item a:hover{
   border-color: var(--basic-light-grey);
 }
-.catalog-pagination-item a:active {
+.catalog-pagination-item a:active{
   border-color: var(--basic-red);
 }
 .catalog-pagination-item-active{
@@ -427,8 +448,11 @@ background-color: var(--basic-hover-green);
   align-items: center;
 }
 /*"catalog-description*/
-.catalog-description{
+.catalog-description-bar{
   background-color: var(--basic-background);
+}
+.catalog-description{
+min-height: 261px;
 }
 .catalog-description h2{
   font-family: "Cuprum", "Arial", sans-serif;
@@ -436,6 +460,7 @@ background-color: var(--basic-hover-green);
   line-height: 1;
   font-weight: 400;
   text-transform: uppercase;
+  padding-top: 64px;
 }
 .catalog-description p{
   font-size: 13px;

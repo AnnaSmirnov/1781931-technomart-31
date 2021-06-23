@@ -444,6 +444,7 @@ margin-bottom: auto;
   background-color: var(--special-active-grey);
 }
 /*slider*/
+
 .catalog-item-slider{
   margin: 0;
   padding: 0;
@@ -459,13 +460,17 @@ margin-bottom: auto;
   margin: 0;
   padding: 0;
 }
-.catalog-slider-img{
+.catalog-slider-item{
   position: relative;
   z-index: 1;
 }
-.catalog-slider-text{
+.catalog-slider-img{
   position: absolute;
   z-index: 2;
+}
+.catalog-slider-text{
+  position: absolute;
+  z-index: 3;
 }
 .catalog-slider-item h3{
   font-size: 36px;
@@ -490,7 +495,7 @@ margin-bottom: auto;
   width: 192px;
   height: 38px;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -501,20 +506,25 @@ margin-bottom: auto;
 .catalog-slider-button:active{
   background-color: var(--basic-active-red);
 }
-.catalog-slider-control{
-  list-style: none;
+.slider{
+  position: relative;
+  z-index: 1;
+}
+.catalog-slider{
+  position: absolute;
+  z-index: 2;
 }
 .catalog-slider-back{
   width: 22px;
   height: 40px;
-  background-color: red;
+  background-color: transparent;
   background-image: url("../img/button/icon-left.svg");
   background-repeat: no-repeat;
   border: none;
   outline: none;
   cursor: pointer;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 .catalog-slider-next{
   width: 22px;
@@ -527,7 +537,7 @@ margin-bottom: auto;
   outline: none;
   cursor: pointer;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 
 .main-button{
