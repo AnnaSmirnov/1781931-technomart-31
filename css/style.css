@@ -90,7 +90,7 @@
   height: 100%;
 }
 .page-body{
-  min-width: 960px;
+  min-width: 940px;
   min-height: 100%;
   margin: 0;
   padding: 0;
@@ -256,8 +256,8 @@ color: inherit;
   min-height: 320px;
 }
 .header-info{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
+  display: flex;
+  justify-content: space-between;
   min-height: 158px;
 }
 .header-info-about{
@@ -268,11 +268,14 @@ color: inherit;
   color: var(--basic-red);
   margin: 0;
   padding: 0;
+  width: 200px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .header-contacts{
-margin-top: auto;
-margin-bottom: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .header-contacts-phone{
   font-size: 21px;
@@ -301,12 +304,22 @@ margin-bottom: auto;
   margin: 0;
   padding: 0;
   color: inherit;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .account-login-link a{
   padding: 12px 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
 }
 .account-registration a{
   padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .account-item a{
@@ -509,6 +522,7 @@ margin-bottom: auto;
 .slider{
   position: relative;
   z-index: 1;
+  height: 100%;
 }
 .catalog-slider{
   position: absolute;
@@ -525,6 +539,7 @@ margin-bottom: auto;
   cursor: pointer;
   position: absolute;
   z-index: 3;
+  top: calc(50% - 20px);
 }
 .catalog-slider-next{
   width: 22px;
@@ -538,6 +553,7 @@ margin-bottom: auto;
   cursor: pointer;
   position: absolute;
   z-index: 3;
+  top: calc(50% - 20px);
 }
 
 .main-button{
@@ -552,6 +568,7 @@ margin-bottom: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .main-button:hover{
   background-color: var(--basic-hover-red);
@@ -590,8 +607,9 @@ margin-bottom: auto;
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4,220px);
+  gap: 20px;
   margin-bottom: 70px;
 }
 .product-item{

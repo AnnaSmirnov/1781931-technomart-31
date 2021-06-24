@@ -13,6 +13,16 @@ a { text-decoration: none }
   list-style: none;
   color: inherit;
 }
+.account-active{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.account-active-list{
+  display: flex;
+  font-size: 16px;
+  line-height: 1.12;
+  font-weight: 400;
+}
 .account-active a{
   font-size: 21px;
   line-height: 1;
@@ -45,9 +55,10 @@ a { text-decoration: none }
 }
 
 .perforators{
-  display: grid;
-  grid-template-columns: 220px 1rf;
+display: grid;
+grid-template-columns: 220px 1fr;
 }
+
 /*breadcrumbs*/
 .breadcrumbs{
   list-style: none;
@@ -89,6 +100,13 @@ a { text-decoration: none }
 }
 
 /*sorting*/
+.sorting-form{
+  margin: 0;
+  padding: 0;
+  background-color: var(--basic-light);
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
 .sorting-item{
   text-transform: uppercase;
   opacity: 0.3;
@@ -137,7 +155,7 @@ a { text-decoration: none }
 }
 /*filter*/
 .filter{
-  width: 220px;
+
 }
 .filter h2 {
   background-color: var(--basic-light);
@@ -328,8 +346,10 @@ opacity: 0.3;
 /*catalog*/
 .main-catalog-list{
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3,220px);
+  gap: 20px;
 }
-
 .main-catalog-item{
   background-color: var(--basic-white);
   border: 1px solid var(--extra-light-grey);
@@ -376,16 +396,16 @@ box-shadow: 0px 0px 30px 2px var(--special-active-grey);
   height: 38px;
 }
 .button-buy{
-color: var(--basic-white);
-background-color: var(--basic-green);
-background-image: url("../img/icons/icon-cart.svg");
-background-repeat: no-repeat ;
-background-position: left;
-border: none;
-box-shadow: inset 0px -3px 0px var(--spesial-shadow-green);
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+  background-image: url("../img/icons/icon-cart.svg");
+  background-repeat: no-repeat ;
+  background-position: left;
+  border: none;
+  box-shadow: inset 0px -3px 0px var(--spesial-shadow-green);
 }
 .button-buy:hover{
-background-color: var(--basic-hover-green);
+  background-color: var(--basic-hover-green);
 }
 .button-buy:active{
   background-color: var(--basic-active-green);
