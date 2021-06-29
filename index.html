@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css" >
     <link rel="icon" href="favicon.ico">
     <base href="https://htmlacademy-htmlcss.github.io/1781931-technomart-31/4/">
-</head>
+  </head>
   <body class="page-body">
 
     <header class="header">
@@ -159,7 +159,7 @@
         </div>
 
         <ul class="products-list">
-          <li class="product-item">
+          <li class="main-catalog-item">
             <a href="blank.html">
               <h3>Перфоратор BOSCH BFG 9000</h3>
               <img src="img/catalog/perforator1.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
@@ -170,8 +170,12 @@
             <p>
               <button class="button-priсe" type="button">25500 Р.</button>
             </p>
+            <div class="incart">
+              <button  class="button-incart button-buy" type="button">КУПИТЬ</button>
+              <button  class="button-incart button-bookmark" type="button">В закладки</button>
+            </div>
           </li>
-          <li class="product-item">
+          <li class="main-catalog-item">
             <a href="blank.html">
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <img src="img/catalog/perforator 2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
@@ -182,8 +186,12 @@
             <p>
               <button class="button-priсe" type="button">15500 Р.</button>
             </p>
+            <div class="incart">
+              <button  class="button-incart button-buy" type="button">КУПИТЬ</button>
+              <button  class="button-incart button-bookmark" type="button">В закладки</button>
+            </div>
           </li>
-          <li class="product-item">
+          <li class="main-catalog-item">
             <a href="blank.html">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <img src="img/catalog/perforator3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
@@ -194,8 +202,12 @@
             <p>
               <button class="button-priсe" type="button">25500 Р.</button>
             </p>
+            <div class="incart">
+              <button  class="button-incart button-buy" type="button">КУПИТЬ</button>
+              <button  class="button-incart button-bookmark" type="button">В закладки</button>
+            </div>
           </li>
-          <li class="product-item">
+          <li class="main-catalog-item">
             <a href="blank.html">
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <img src="img/catalog/perforator 2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
@@ -206,6 +218,10 @@
             <p>
               <button class="button-priсe" type="button">12500 Р.</button>
             </p>
+            <div class="incart">
+              <button  class="button-incart button-buy" type="button">КУПИТЬ</button>
+              <button  class="button-incart button-bookmark" type="button">В закладки</button>
+            </div>
           </li>
         </ul>
       </section>
@@ -292,7 +308,7 @@
 
         <section class="info-contacts">
           <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами,
+          <p class="info-contacts-text">Вы можете забрать товар сами,
             заехав в наш офис:</p>
           <a href="https://www.google.com/maps/place/Studio+212/@59.968342,30.3151923,17z/data=!3m1!4b1!4m5!3m4!1s0x4696315bc4e8ce61:0xe703c377f3424272!8m2!3d59.968342!4d30.317381"><img src="img/map/map-mini.png" width="300" height="158" alt="map"></a>
           <p>
@@ -363,45 +379,58 @@
               </a>
             </li>
           </ul>
-          <p class="feedback-mail">
-            Обратная связь
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
-          <p class="developer">
-          Разработано:
-          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-          </p>
+          <div class="feedback-developer">
+            <div class="feedback-mail">
+              Обратная связь:
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="developer">
+              Разработано -
+              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            </div>
+          </div>
         </section>
       </div>
     </footer>
 
-    <section class="form-mail">
+    <section class="modal form-mail">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="name">Ваше имя:</label>
-          <input class="form-mail-name" type="text" id="name" name="name" placeholder="Имя Фамилия">
-
-          <label for="name-email">Ваш e-mail:</label>
-          <input class="form-mail-email" type="email" id="name-email" name="e-mail" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="text-email">Текст письма:</label>
-          <textarea class="form-mail-text" id="text-email">В свободной форме</textarea>
-      </p>
-        <p>
+        <ul class="form-mail-list">
+          <li class="form-mail-intem">
+            <label class="form-mail-label" for="name">Ваше имя:</label>
+            <input class="form-mail-input form-mail-name" type="text" id="name" name="name" placeholder="Имя Фамилия">
+          </li>
+          <li>
+            <label class="form-mail-label" for="name-email">Ваш e-mail:</label>
+            <input class="form-mail-input form-mail-email" type="email" id="name-email" name="e-mail" placeholder="email@example.com">
+         </li>
+          <li>
+            <label class="form-mail-label" for="text-email">Текст письма:</label>
+            <textarea class="form-mail-input form-mail-text" id="text-email">В свободной форме</textarea>
+          </li>
+        </ul>
+        <div class="form-mail-button-submit">
           <button class="form-mail-button" type="submit" value="Отправить">Отправить</button>
-        </p>
+        </div>
       </form>
       <button class="button-close" type="button"></button>
     </section>
 
-    <section class="modal-map">
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <a  href="https://www.google.com/maps/place/Studio+212/@59.968342,30.3151923,17z/data=!3m1!4b1!4m5!3m4!1s0x4696315bc4e8ce61:0xe703c377f3424272!8m2!3d59.968342!4d30.317381">
         <img class="modal-map-google" src="img/map/map.png" width="943" height="449" alt="Санкт-Петербург,наб.Реки Карповки,5литП">
       </a>
       <button class="button-close" type="button"></button>
+    </section>
+    <section class="cart-popup modal">
+      <button  class="button-close" type="button"></button>
+      <h2 class="cart-popup-title">Товар добавлен в корзину!</h2>
+      <div class="cart-popup-buttons">
+        <a  class="order-button" href="blank.html">ОФОРМИТЬ ЗАКАЗ</a>
+        <a  class="shopping-button" href="catalog.html">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+      </div>
     </section>
   </body>
 </html>
