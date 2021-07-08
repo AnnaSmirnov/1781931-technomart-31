@@ -804,7 +804,6 @@ a{
   align-items: center;
   text-align: center;
 }
-
 /**products**/
   .product-title,.companies-title{
   background-color: var(--basic-extra-light);
@@ -858,7 +857,6 @@ a{
 .product-item:hover{
   box-shadow: 0px 0px 30px 2px var(--special-active-grey);
 }
-
 .product-item a{
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -1046,6 +1044,7 @@ a{
   font-size: 30px;
   line-height: 1 ;
   font-weight: 400;
+  margin-top: 65px;
   text-transform: uppercase;
   color: var(--basic-black);
 }
@@ -1111,7 +1110,6 @@ a{
   margin: 0;
   padding: 0;
   min-height: 300px;
-  margin-bottom: 54px;
   margin-top: 70px;
   margin-left: 80px;
 }
@@ -1183,7 +1181,6 @@ a{
   margin-top: 26px;
 }
 /**information**/
-
 .info{
   margin: 0;
   padding: 0;
@@ -1544,7 +1541,7 @@ a{
   opacity: 0.3;
 }
 .filter-companies-input:focus+label{
-  box-shadow: 0px 0px 30px 2px var(--special-active-grey)
+  color: var(--basic-red);
 }
 /*filter-rechargeable*/
 .filter-rechargeable{
@@ -1591,6 +1588,9 @@ a{
 }
 .filter-rechargeable-input:disabled+label{
   opacity: 0.3;
+}
+.filter-rechargeable-input:focus+label{
+  color: var(--basic-red);
 }
 .filter button{
   border: 1px solid var(--spesial-border-gray);
