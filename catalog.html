@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <header class="header">
@@ -43,7 +42,7 @@
         <section class="container header-info">
           <h2 class="visually-hidden">раздел информации и вход в личный кабинет</h2>
           <p class="header-info-about">
-            Интернет-магазин строительных материалов и&nbspинструментов для ремонта
+            Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
           </p>
           <address class="header-contacts">
             <a  href="tel:+78005558628" title="Позвонить">+7 800 555-86-28</a>
@@ -59,9 +58,9 @@
                 </a>
                 <a class="unlogin" href="blank.html" title="Выход">
                   <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5"/>
-                    <path d="M2.10598 13.952V3.048C2.12398 2.672 2.27698 1.991 3.11598 1.991H8.14297V0H3.11598C0.937975 0 0.111975 1.81 0.0869751 3.027V13.973C0.111975 15.189 0.937975 17 3.11598 17H8.14297V15.01H3.11598C2.27698 15.01 2.12398 14.327 2.10598 13.952Z" fill="#C5C5C5"/>
-                    </svg>
+                    <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z"/>
+                    <path d="M2.10598 13.952V3.048C2.12398 2.672 2.27698 1.991 3.11598 1.991H8.14297V0H3.11598C0.937975 0 0.111975 1.81 0.0869751 3.027V13.973C0.111975 15.189 0.937975 17 3.11598 17H8.14297V15.01H3.11598C2.27698 15.01 2.12398 14.327 2.10598 13.952Z"/>
+                  </svg>
                </a>
               </div>
               <ul class="account-active-list">
@@ -84,7 +83,6 @@
           </nav>
         </div>
     </header>
-
     <main class="main">
       <div class="perforators container">
         <ul class="breadcrumbs">
@@ -106,9 +104,7 @@
             Перфораторы
           </li>
         </ul>
-
         <h1 class="name-catalog container">перфораторы</h1>
-
         <section class="filter">
           <h2 class="filter-name">фильтр:</h2>
           <form method="get" action="https://echo.htmlacademy.ru">
@@ -197,10 +193,8 @@
               </button>
             </div>
           </section>
-
           <section class="main-catalog">
             <h2 class="main-catalog-name visually-hidden">Каталог</h2>
-
             <ul class="main-catalog-list">
               <li class="product-item">
                 <a href="blank.html">
@@ -382,7 +376,6 @@
           <p>В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </section>
       </div>
-
       <footer class="footer">
         <div class="footer-top-bar">
           <section class="footer-top container">
@@ -420,7 +413,10 @@
         <div class="feedback-bar">
           <section class="feedback container">
             <h2 class="visually-hidden">Обратная связь</h2>
-            <p class="copyright">© 2010–2021 Компания «Техномарт» Все права защищены</p>
+            <div class="copyright">
+              <p>© 2010–2021 Компания «Техномарт»</p>
+              <p>Все права защищены</p>
+            </div>
             <ul class="socials">
               <li class="socials-item socials-item-vk">
                 <a href="#" title="Вконтакте" aria-label="вконтакте">
