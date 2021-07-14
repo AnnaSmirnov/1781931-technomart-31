@@ -1310,6 +1310,7 @@ padding-left: 20px;
   display: flex;
   align-items: center;
   text-align: center;
+  flex-wrap: wrap;
   cursor: pointer;
 }
 
@@ -1545,7 +1546,7 @@ padding-left: 20px;
   background-color: var(--basic-red);
   width: 300px;
   min-height: 38px;
-  box-sizing: border-box;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1555,10 +1556,12 @@ padding-left: 20px;
 
 .contacts-button:hover {
   background-color: var(--basic-hover-red);
+  border: none;
 }
 
 .contacts-button:active {
   background-color: var(--basic-active-red);
+  border: none;
 }
 
 /*************каталог перфораторов***************/
@@ -2408,6 +2411,15 @@ margin-bottom: 23px;
   filter: drop-shadow(0px 20px 40px var(--shadow-popup));
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .button-close {
   position: absolute;
   padding: 10px;
@@ -2593,3 +2605,44 @@ margin-bottom: 23px;
   left: 81px;
 }
 
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
