@@ -127,3 +127,7 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 }
+
+cartPopup();
+mapPopup();
+mailPopup();
