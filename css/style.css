@@ -99,6 +99,7 @@
   --spesial-gray-toggle: #ABABAB;
   --spesial-shadow-toggle: #cfcfcf;
 }
+
 .page {
   height: 100%;
 }
@@ -167,7 +168,7 @@ a {
 
 .header-top {
   width: 940px;
-  height: 42px;
+  min-height: 42px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
@@ -274,6 +275,7 @@ a {
   list-style: none;
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .user-nav-item:active {
@@ -286,7 +288,7 @@ a {
   padding: 0;
   color: inherit;
   height: 42px;
-  width: 150px;
+  width: 149px;
   position: relative;
   box-sizing: border-box;
   display: flex;
@@ -1024,7 +1026,7 @@ a {
   border: 1px solid var(--extra-light-grey);
   box-sizing: border-box;
   width: 220px;
-  min-height: 318px;
+  min-height: 316px;
   padding: 0;
   margin: 0;
   position: relative;
@@ -1048,7 +1050,7 @@ a {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 5px 10px;
+  padding: 3px 10px;
 }
 
 .product-item-image {
@@ -1238,7 +1240,7 @@ padding-left: 20px;
 
 .services-bar {
   background-color: var(--basic-background);
-  margin-bottom: 75px;
+  margin-bottom: 70px;
 }
 
 .services {
@@ -1280,7 +1282,8 @@ padding-left: 20px;
   margin: 0;
   padding: 0;
   width: 240px;
-  margin-top: 68px;
+  margin-top: 70px;
+  margin-bottom: 100px;
   position: relative;
 }
 
@@ -1303,7 +1306,7 @@ padding-left: 20px;
   color: var(--basic-white);
   background-color: var(--basic-dark);
   box-shadow: 0px 1px 0px var(--basic-extra-dark), inset 0px 1px 0px var(--spesial-shadow-gray);
-  height: 61px;
+  min-height: 61px;
   width: 240px;
   padding-left: 22px;
   border: none;
@@ -1334,7 +1337,7 @@ padding-left: 20px;
   margin: 0;
   padding: 0;
   min-height: 280px;
-  margin-top: 68px;
+  margin-top: 70px;
   margin-left: 80px;
 }
 
@@ -1370,7 +1373,6 @@ padding-left: 20px;
   background-image: url("../img/service-img/delivery.png");
   background-position: right top 22px;
   background-repeat: no-repeat;
-  position: absolute;
   z-index: 1;
 }
 
@@ -1390,7 +1392,6 @@ padding-left: 20px;
   background-image: url("../img/service-img/guarantee.png");
   background-position: right top;
   background-repeat: no-repeat;
-  position: absolute;
   z-index: 2;
   display: none;
 }
@@ -1403,7 +1404,6 @@ padding-left: 20px;
   background-image: url("../img/service-img/credit.png");
   background-position: right top;
   background-repeat: no-repeat;
-  position: absolute;
   z-index: 3;
   display: none;
 }
@@ -1445,7 +1445,7 @@ padding-left: 20px;
 .features p:nth-of-type(2) {
   width: 85%;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .features h2 {
@@ -1691,11 +1691,11 @@ padding-left: 20px;
 }
 
 .filter fieldset:nth-of-type(1) {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .filter fieldset:nth-of-type(2) {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .filter fieldset:nth-of-type(3) {
@@ -1705,17 +1705,17 @@ padding-left: 20px;
 .filter-fieldset:not(:last-of-type) {
   border-bottom: 1px solid var(--extra-light-grey);
 }
+
 .filter-fieldset legend:nth-of-type(1) {
   margin-bottom: 11px;
 }
-
 
 /*price-filter*/
 
 .price-filter {
   padding: 0;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .range-controls {
@@ -1799,7 +1799,7 @@ padding-left: 20px;
   margin-bottom: 6px;
 }
 .filter-companies-item:last-of-type {
-margin-bottom: 23px;
+margin-bottom: 21px;
 }
 .filter-companies-item label {
   font-size: 15px;
@@ -2049,7 +2049,7 @@ margin-bottom: 23px;
   grid-template-columns: repeat(3,220px);
   -moz-column-gap: 20px;
        column-gap: 20px;
-  row-gap: 16px;
+  row-gap: 18px;
 }
 
 /*pagination*/
@@ -2119,9 +2119,10 @@ margin-bottom: 23px;
 .catalog-description-bar {
   background-color: var(--basic-background);
 }
+
 .catalog-description {
   margin-top: 64px;
-  padding-bottom: 70px;
+  padding-bottom: 68px;
 }
 
 .catalog-description h2 {
@@ -2132,6 +2133,7 @@ margin-bottom: 23px;
   text-transform: uppercase;
   padding-top: 52px;
 }
+
 .catalog-description p {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
@@ -2411,15 +2413,6 @@ margin-bottom: 23px;
   filter: drop-shadow(0px 20px 40px var(--shadow-popup));
 }
 
-.modal-show {
-  display: block;
-  animation: bounce 0.6s;
-}
-
-.modal-error {
-  animation: shake 0.6s;
-}
-
 .button-close {
   position: absolute;
   padding: 10px;
@@ -2603,6 +2596,15 @@ margin-bottom: 23px;
   height: 66px;
   top: 48px;
   left: 81px;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 /* Animations */
